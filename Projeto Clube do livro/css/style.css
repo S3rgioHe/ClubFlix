@@ -1,0 +1,172 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+@keyframes sugir {
+    /*Animção do header ao iniciar a pagina*/
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 56x;
+    top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    align-self: flex-start;
+    padding: 10px 18px ;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-top: 15px;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 0.5s;
+    animation: sugir 3s;
+
+}
+
+.header a:hover{
+    background-color: orange;
+    border-radius: 10px;
+
+}
+
+.header img{
+    z-index: 10;
+    transform: scale(0.6);
+    margin-top: -15px;
+    animation: sugir 3s;
+}
+
+.main-child{
+    z-index: 10;
+}
+
+.main {
+    height: 780px;
+    background: url("../imgs/bg-login.jpg") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation: sugir 4s;
+}
+
+.main h1{
+    color: white;
+    font-size: 64px;
+    max-width: 510;
+}
+.main span{
+    color: white;
+    font-size: 40px;
+}
+.main p{
+    color: white;
+    font-size: 34px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 500px 250px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-cta input{
+    outline: none;
+    padding: 20px 10px;
+    font-size: 10px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    transform: translate(10px);
+    font-size: 20px;
+    outline: none;
+}
+.form-cta button{
+    background-color: red;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    transform: translate(-10px);
+    font-size: 20px;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 0.5s;
+}
+.form-cta button:hover{
+    background-color: orange;
+    border-radius: 10px;
+}
+.gradient {
+    background-color: rgba(0,0,0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*Dedicado para a pagina do cadastro dos livros*/
+.container{
+    
+    z-index: 10;
+    margin-top: 150px;
+    margin-left: 20px;
+    max-width: 300px;
+    max-height: 600x;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.705), grey, rgba(0, 0, 0, 0.705));
+    border-radius: 15px;
+    animation: sugir 3s;
+}
+.container h1{
+    color: white;
+}
+/* .container h2{
+    color: white;
+    transform: translate(480px,-200px);
+    font-size: 30px;
+} */
+.container button{
+    background-color: red;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    transform: translate(-10px);
+    font-size: 20px;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 1s;
+    padding: 10px 45px;
+    /* transform: translate(30px); */
+}
+.container button:hover{
+    background-color: orange;
+    border-radius: 255px;
+}
+
+
+.linha-form {
+    margin-bottom: 15px;
+}
